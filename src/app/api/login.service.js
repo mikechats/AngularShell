@@ -3,12 +3,12 @@ function LoginService($q) {
 
   svc.login = function(email, password) {
     return $q(function(resolve, reject){
-      if (email === 'mikechats@gmail.com' && password === '12345') {
+      if (email === 'miketest@gmail.com' && password === '12345') {
         var user = {
           id: 10001,
-          email: 'mikechats@gmail',
+          email: 'miketest@gmail.com',
           firstname: 'Mike',
-          lastname: 'Chats',
+          lastname: 'Test',
         };
         resolve(user);
       } else {
