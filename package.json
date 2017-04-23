@@ -2,7 +2,7 @@
   "name": "todo",
   "version": "1.0.0",
   "author": "@mikechats",
-  "description": "To do application",
+  "description": "Angular shell application",
   "scripts": {
     "start": "gulp",
     "test": "karma start",
