@@ -1,0 +1,38 @@
+<form name="authForm" novalidate ng-submit="$ctrl.submitForm();">
+  <div class="field">
+    <label class="label">Email</label>
+    <p class="control has-icons-left has-icons-right">
+      <input
+        class="input"
+        type="text"
+        placeholder="Enter your email"
+        ng-model="$ctrl.user.email">
+      <span class="icon is-small is-left">
+        <i class="fa fa-envelope"></i>
+      </span>
+    </p>
+  </div>
+  <div class="field">
+    <label class="label">Password</label>
+    <p class="control has-icons-left has-icons-right">
+      <input
+        class="input"
+        type="password"
+        placeholder="Enter your password"
+        ng-model="$ctrl.user.password">
+      <span class="icon is-small is-left">
+        <i class="fa fa-envelope"></i>
+      </span>
+    </p>
+  </div>
+  <div  ng-if="$ctrl.message" class="notification is-danger">
+    {{ $ctrl.message }}
+  </div>
+  <div class="auth-button">
+    <p class="control">
+      <button class="button is-primary" type="submit" ng-disabled="authForm.$invalid">
+        {{ $ctrl.button }}
+      </button>
+    </p>
+  </div>
+</form>
